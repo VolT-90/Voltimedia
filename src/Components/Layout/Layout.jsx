@@ -1,0 +1,20 @@
+import React from 'react'
+import Navbar from '../Navbar/Navbar'
+import { Outlet } from 'react-router-dom'
+import Footer from '../Footer/Footer'
+
+export default function Layout() {
+  return (
+    <>
+        <Navbar/>
+
+        <div className="p-5 pt-23  min-h-screen ">
+
+        <Outlet/>
+
+        </div>
+
+        <Footer/>
+    </>
+  )
+}
